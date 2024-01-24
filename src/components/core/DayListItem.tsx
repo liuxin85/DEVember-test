@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-type DayListItemProps = {
+type DayListItem = {
   day: number;
 };
 
-const DayListItem = ({ day }: DayListItemProps) => {
+const DayListItem = ({ day }: DayListItem) => {
   return (
     <View key={day} style={styles.box}>
       <Text style={styles.text}>{day}</Text>
@@ -30,5 +30,6 @@ const styles = StyleSheet.create({
   text: {
     color: '#9b4521',
     fontSize: 50,
+    fontFamily: 'AmaticBold',
   },
 });
